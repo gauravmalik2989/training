@@ -7,7 +7,7 @@ on:
  
 jobs:
   invoke-reusable-workflow:
-    uses: .github/workflows/ReusableBuild.yml  # Call the reusable workflow
+    uses: ./.github/workflows/ReusableBuild.yml  # Call the reusable workflow
     with:
       var1: '16'     
       var2: true
