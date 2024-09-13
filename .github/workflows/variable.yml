@@ -14,9 +14,8 @@ jobs:
         run: echo "${{  github.actor }} triggered job on ${{ github.repository }} repo on $env:RUNNER_OS at $(date)."
       - name: condition 2
         if: runner.os != 'Windows'
-        run: echo "${{  github.actor }} triggered job on ${{ github.repository }} repo on non windows OS ie $(cat /etc/os-release |grep -i PRETTY_NAME) at $(date) type equals ${{ github.GITHUB_REF }}."
+        run: echo "${{  github.actor }} triggered job on ${{ github.repository }} repo on non-windows OS ie $RUNNER_OS $(cat /etc/os-release |grep -i PRETTY_NAME) at $(date) type equals ${{ github.ref }}."
       - name: print OS name 
         run: echo $RUNNER_OS
-      - name: print OS name 2
-        run: cat /etc/os-release
+     
      
