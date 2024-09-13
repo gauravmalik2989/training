@@ -17,7 +17,7 @@ jobs:
       - name: creatting file 
         run: echo  ${{  github.actor }} >> actorname.txt 
       - name: creatting file 
-        run: echo  "${{  github.actor }} triggered job on ${{ github.repository }} repo at echo $(date)"
+        run: echo  "${{  github.actor }} triggered job on ${{ github.repository }} repo at $(date)"
       - name: print 
         run: cat actorname.txt 
       - name: print varibale value 
