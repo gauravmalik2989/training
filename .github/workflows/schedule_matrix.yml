@@ -20,7 +20,7 @@ jobs:
         names: ['test1' ,'test2']
     # condition     
     #if: ${{ github.ref == 'refs/heads/main' }}  
-    if: github.repository == 'gauravmalik2989/schedule_matrix' 
+    #if: github.repository == 'gauravmalik2989/schedule_matrix' 
     runs-on: ubuntu-latest
     env:
       Day: Friday
